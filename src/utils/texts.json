@@ -1,0 +1,9 @@
+{
+    "mainTitle": "Set your price",
+    "mainSubTitle": "Market price: ",
+    "inputErrorText": "Invalid input or more than 18 decimal places",
+    "inputPlaceholder": "Type price",
+    "buttonTitle": "Add price",
+    "price": "Price",
+    "tooltipContent": "Copy the entered data"
+}
