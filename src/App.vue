@@ -34,6 +34,11 @@ const handleOccuredError = (value) => {
   inputHasError.value = value;
 };
 
+// Ф-ція копіювання через іконку
+const handleCopyIconClick = () => {
+  !inputHasError.value && navigator.clipboard.writeText(inputValue.value);
+};
+
 // Ф-ція отримання класів в залежності від парметра ціни
 const getPriceClasses = (price) => {
   return +price > STABLE_PRICE ? "text-green-600" : "text-red-600";

@@ -3,10 +3,6 @@ import { ref, computed, defineProps } from "vue";
 
 // Оголошення пропсів
 const props = defineProps({
-  text: {
-    type: String,
-    required: true,
-  },
   position: {
     type: String,
     default: "top", // Може бути 'top', 'bottom', 'left', 'right'
@@ -55,7 +51,7 @@ const tooltipClasses = computed(() => {
         :class="[tooltipClasses, width]"
         class="absolute z-10 p-2 text-white bg-gray-800 rounded shadow-md"
       >
-        <slot name="content">{{ text }}</slot>
+        <slot name="content"></slot>
       </div>
     </transition>
   </div>

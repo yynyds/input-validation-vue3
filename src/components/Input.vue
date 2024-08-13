@@ -62,11 +62,6 @@ const handleCopy = (event) => {
   event.preventDefault();
 };
 
-// Ф-ція копіювання через іконку
-const handleCopyIconClick = () => {
-  navigator.clipboard.writeText(props.modelValue);
-};
-
 // Ф-ція вводу данних через ентер
 const handleEnter = () => {
   !hasError.value && emit("handleEnter", props.modelValue);
