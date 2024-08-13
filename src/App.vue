@@ -41,9 +41,9 @@ const getPriceClasses = (price) => {
 
 // Ф-ція отримання класів в залежності від пропси disabled
 const getIconClasses = () => {
-  return inputValue.value
-    ? "text-cyan-500 cursor-copy"
-    : "cursor-not-allowed text-cyan-900";
+  return !inputValue.value || inputHasError.value
+    ? "cursor-not-allowed text-cyan-900"
+    : "text-cyan-500 cursor-copy";
 };
 
 // Кожен раз коли монтується компонент(перезавантужається сторінка) - генеруємо рандомне число в вказаному ренджі

@@ -53,7 +53,7 @@ const tooltipClasses = computed(() => {
       <div
         v-if="isVisible"
         :class="[tooltipClasses, width]"
-        class="absolute w-full z-10 p-2 text-white bg-gray-800 rounded shadow-md"
+        class="absolute z-10 p-2 text-white bg-gray-800 rounded shadow-md"
       >
         <slot name="content">{{ text }}</slot>
       </div>
