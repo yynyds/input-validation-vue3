@@ -71,7 +71,7 @@ onMounted(() => {
       </div>
     </div>
     <div
-      class="flex flex-col md:flex-row md:flex-row gap-2 justify-between items-center w-2/3 mx-auto"
+      class="flex flex-col md:flex-row md:flex-row gap-10 justify-between items-center w-2/3 mx-auto"
     >
       <Input
         v-model="inputValue"
