@@ -11,5 +11,7 @@ export function formatPrice(value) {
     .padEnd(decimalPart ? `${decimalPart}`.toString().length || 2 : 2, "0")
     .slice(0, decimalPart ? `${decimalPart}`.toString().length || 2 : 2);
 
-  return `$${formattedInteger}.${formattedDecimal}`;
+  return `$${
+    isNaN(formattedInteger) ? 0 : formattedInteger
+  }.${formattedDecimal}`;
 }
